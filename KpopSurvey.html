@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <!-- to apply styles -->
+  <link rel = "stylesheet" href = "styles.css"
+  </head>
+<body>
+  <main>
+
+    <!-- heading -->
+    <h1 id = "title"> Kpop Survey Form</h1>
+    <p id = "description"> Please enter the following information. Data provided would be used to analyze how various age demographics perceive Kpop.</p>
+
+    <section>
+    <form id = "survey-form"> 
+<!-- grouped so they can be together: check styles.css for .item -->
+      <article class = "basicinfo">
+        <!-- the articles is what is being put next to each other-->
+        <article>
+     <h3>Name</h3> 
+     <label id = "name-label" ><input id = "name" type = "text" placeholder = "Please enter first name" required></label>
+     </article>
+     <article>
+     <h3>Email</h3>
+     <label id = "email-label"><input id = "email" type = "email" placeholder = "Enter email" required></label>
+     </article>
+     <article>
+     <h3>Age</h3>
+      <label id = "number-label"><input id = "number" type = "number" placeholder = "Age" min = "10" max = "90"></label>
+      </article>
+      </article>
+
+      <article class = "basicinfo">
+
+      <article>
+<!-- button choices -->
+      <h3>Would you recommend Kpop to a friend?</h3>
+      <label><input id = "yes" type = "radio" name = "recommend" value = "yes"> Yes</label>
+      <label><input id = "no" type = "radio" name = "recommend" value = "no"> No</label>
+     </article>
+
+<!-- dropdown -->
+      <article>
+      <h3> What is your favorite feature of kpop?</h3>
+      <select id = "dropdown">
+        <option value="album">Albums</option>
+        <option value="conceptphotos">Concept Photos</option>
+        <option value="musicvideos">Music Videos</option>
+        <option value="fancontent">Fan Content</option>
+        <option value="fashion">Fashion</option>
+        <option value="choreography">Choreography</option>
+        <option value="varietyShows">Variety Shows</option>
+        <option value="merch">Merch</option>
+        <option value="concerts">Concerts</option>
+        </select>
+        </article>
+        </article>
+
+<!-- checkbox -->
+<!-- inputs are SELF CLOSING, does not need "</input>" -->
+        <h3>What are your favorite concepts?</h3>
+        <input id="fantasy" type="checkbox" name="concepts" value="fantasy"><label for="fantasy">Fantasy</label>
+        <input id="scifi" type="checkbox" name="concepts" value="scifi"><label for="scifi">Science Fiction</label>
+        <input id="girlcrush" type="checkbox" name="concepts" value="girlcrush"><label for="girlcrush">Girl Crush</label>
+        <input id="retro" type="checkbox" name="concepts" value="retro"><label for="retro">Retro</label>
+        <input id="dark" type="checkbox" name="concepts" value="dark"><label for="dark">Dark</label>
+        <input id="summer" type="checkbox" name="concepts" value="summer"><label for="summer">Summer</label>
+        <input id="coa" type="checkbox" name="concepts" value="coa"><label for="coa">Coming of Age</label>
+        <input id="eth" type="checkbox" name="concepts" value="eth"><label for="eth">Ethereal</label>
+        <input id="tra" type="checkbox" name="concepts" value="tra"><label for="tra">Traditional</label>
+        <input id="roy" type="checkbox" name="concepts" value="roy"><label for="roy">Royalty</label>
+
+        <h3>Any comments? Tell us below!</h3>
+        <textarea placeholder="You can type in your thoughts."></textarea>
+
+        <input id="submit" type="submit">
+          
+      </form>
+      </section>
+    </main>
+  </body>
+  </html>

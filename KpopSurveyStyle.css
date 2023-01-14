@@ -1,0 +1,13 @@
+  /* to make top words center*/
+  h1, p, h3, label, article, input, textarea {
+      text-align: center;
+  }
+  
+  body {
+    background-color: PaleVioletRed;
+  }
+
+/* line 15: to make name, email and age next to each other*/
+  .basicinfo article {
+    display: inline-block;
+  }
